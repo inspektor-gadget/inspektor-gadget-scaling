@@ -240,7 +240,7 @@ function pre_run {
 	namespace=$1
 
 	kubectl create ns $namespace
-	kubectl gadget deploy
+	kubectl gadget deploy --image=ghcr.io/inspektor-gadget/inspektor-gadget:francis-increase-map-sizes
 }
 
 function run {
